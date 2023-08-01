@@ -1,0 +1,70 @@
+#Group block of code
+#There is need for code that is clean, reusable, maintainable
+#def function_name():
+
+def afternoon(first_name, last_name):
+    print(f"Hi {first_name} {last_name}")
+    print("Attendees are close to 100")
+
+#Calling a function
+afternoon("Assimwe", "Racheal")
+
+#Arguments and parameters
+
+
+#Modules
+#A simple calc
+def add( x , w):
+    return(x + w)
+
+def product(x, w):
+    return(x * w)
+"""
+import module
+y = module.product(4,6)
+print(y)
+"""
+
+#Importing square root and factorial from the module math
+from math import *
+
+print(sqrt(16))
+print(factorial(10))
+
+#input and output in python
+#input('prompt)
+
+#Example of input
+
+name = input("Enter your name: ")
+print("My name is, "+ name)
+
+#Example 2
+number = int(input("Enter a value:"))
+product = number * 20
+print(product)
+
+#multiple inputs in python
+e, f, g = map(int, input("Enter the numbers:").split())
+print("The values are:", end = "")
+print(e, f, g)
+
+#How to capture input from a tuple
+k = (1, 3, 5, 7)
+print("Current tuple")
+print(k)
+print(type(k))
+
+j = list(k)
+j.append(int(input("Enter your new value: ")))
+m = tuple(j)
+print("updated tuple")
+print(m)
+
+#Example
+mylist = list(map(int, input("Enter the list values:").split()))
+myset = set(map(int, input("Enter the set values:").split()))
+print(mylist)
+print(type(mylist))
+print(myset)
+print(type(myset))
